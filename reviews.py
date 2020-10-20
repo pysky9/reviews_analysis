@@ -13,3 +13,11 @@ sum_len = 0
 for line in data :
 	sum_len += len(line)
 print(f'留言平均長度為{sum_len/len(data)}')
+
+# 算留言最長 & 印出
+data_max = []
+for line in data :
+	data_max.append(len(line))
+max_num = max(data_max)
+print(max_num)
+print(data[data_max.index(max_num)])
