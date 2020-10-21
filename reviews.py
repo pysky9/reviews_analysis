@@ -28,3 +28,10 @@ for line in data:
 	if len(line) < 100 :
 		data_filter.append(line)
 print(f"一共有{len(data_filter)}筆資料留言少於100字")
+
+# 篩選留言有 good 單字
+good = []
+for d in data :
+	if 'good' in d:
+		good.append(d)
+print(f"一共有{len(good)}筆留言提到GOOD")
